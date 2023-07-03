@@ -1,0 +1,40 @@
+{% extends "base_layout.html" %} 
+
+{% load crispy_forms_tags %}
+{% load humanize %}
+
+{% block content %}
+  <h1 class="mb-5">Ventas</h1>
+
+  {% if sales %}
+    <div class="border border-muted px-3 py-2 rounded">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Cliente</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          {% for sale in sales %}
+          <tr>
+            <td>{{ sale.client.name }}</td>
+            <td>{{ sale.product }}</td>
+            <td>{{ sale.price|floatformat:2|intcomma }}</td>
+            <td>{{ sale.creation_date|date:"d/m/Y" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="d-flex justify-content-end pt-2 text-muted">
+      <span>Resultados: {{ sales|length }}</span>
+    </div>
+  {% else %}
+    <div class="alert alert-info" role="alert">
+      No se encontraron resultados
+    </div>
+  {% endif %}
+{% endblock %}

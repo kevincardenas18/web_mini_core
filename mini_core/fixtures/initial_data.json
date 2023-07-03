@@ -1,0 +1,84 @@
+[
+    {
+        "model": "mini_core.client",
+        "pk": 1,
+        "fields": {
+            "name": "Perico Palotes"
+        }
+    },
+    {
+        "model": "mini_core.client",
+        "pk": 2,
+        "fields": {
+            "name": "Zoila Baca"
+        }
+    },
+    {
+        "model": "mini_core.client",
+        "pk": 3,
+        "fields": {
+            "name": "Aquiles C"
+        }
+    },
+
+    {
+        "model": "mini_core.sale",
+        "pk": 1,
+        "fields": {
+            "client": 1,
+            "product": "Laptop",
+            "price": 800,
+            "creation_date": "2023-06-04"
+        }
+    },
+    {
+        "model": "mini_core.sale",
+        "pk": 2,
+        "fields": {
+            "client": 1,
+            "product": "Laptop",
+            "price": 400,
+            "creation_date": "2023-06-16"
+        }
+    },
+    {
+        "model": "mini_core.sale",
+        "pk": 3,
+        "fields": {
+            "client": 1,
+            "product": "Celular",
+            "price": 500,
+            "creation_date": "2023-06-18"
+        }
+    },
+    {
+        "model": "mini_core.sale",
+        "pk": 4,
+        "fields": {
+            "client": 2,
+            "product": "Refrigerador",
+            "price": 1600,
+            "creation_date": "2023-06-17"
+        }
+    },
+    {
+        "model": "mini_core.sale",
+        "pk": 5,
+        "fields": {
+            "client": 2,
+            "product": "Televisión",
+            "price": 200,
+            "creation_date": "2023-06-24"
+        }
+    },
+    {
+        "model": "mini_core.sale",
+        "pk": 6,
+        "fields": {
+            "client": 3,
+            "product": "Cocina",
+            "price": 400,
+            "creation_date": "2023-06-02"
+        }
+    }
+]

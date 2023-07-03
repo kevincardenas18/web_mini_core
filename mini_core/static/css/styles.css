@@ -1,0 +1,11 @@
+.nav-pills > li > a {
+    font-size: 1rem;
+}
+
+.nav-pills > li > a.active {
+    color: #fff !important;
+}
+
+.border-muted {
+    border-color: #bfc2c6 !important;
+}
